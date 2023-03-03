@@ -6,7 +6,16 @@
 body{
     background-color: aquamarine;
 }
-.logo{
+.logo-img{
+  float: left;
+  position: relative;
+  margin: 10px 15px 15px 10px;
+}
+.bg-div{
+ background:#333;
+ overflow: hidden;
+}
+/* .logo{
     width: 20%;
     display: flex;
     justify-content: center;
@@ -18,7 +27,7 @@ body{
     border-radius: 50px;
     color: white;
 
-}
+} */
 
 body {
   font-family: Arial, sans-serif;
@@ -29,6 +38,19 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.logo-img{
+   width: 20%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.logo-img img{
+  width: 30%;
+  left: -10%;
+  border: 3px solid rgb(220, 245, 78);
+  border-radius: 30px;
+  cursor: pointer;
 }
 nav .mainMenu {
   display: flex;
@@ -73,7 +95,7 @@ nav .mainMenu .closeMenu,
 nav .logo {
   margin: 6px;
   cursor: pointer;
-  text-transform: uppercase;
+  
 }
 @media (max-width: 800px) {
   nav .mainMenu {
