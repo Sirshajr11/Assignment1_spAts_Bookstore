@@ -6,12 +6,6 @@
 body{
     background-color: aquamarine;
 }
-.rightnavbar{
-    width: 50%;
-    right: 10%;
-    padding: auto;
-
-}
 .logo{
     width: 20%;
     display: flex;
@@ -22,42 +16,100 @@ body{
     width: 33%;
     border: 3px solid wheat;
     border-radius: 50px;
+    color: white;
 
 }
-.navbar{
-    display: flex;
-    align-items: center;
+
+body {
+  font-family: Arial, sans-serif;
+}
+nav {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+nav .mainMenu li a:hover {
+  background: rgb(255, 94, 0);
+}
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+.fa-facebook:hover {
+  color: rgb(0, 110, 255);
+}
+.fa-twitter:hover {
+  color: rgb(86, 154, 243);
+}
+.fa-instagram:hover {
+  color: rgb(255, 0, 191);
+}
+.fa-youtube:hover {
+  color: rgb(255, 123, 0);
+}
+nav .logo {
+  margin: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+@media (max-width: 800px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
     justify-content: center;
-    position: sticky;
-    top: 0;
-    cursor: pointer;
-}
-
-.nav-list{
-    width: 50%;
-    
-    display: flex;
     align-items: center;
-    
-
+    background: rgb(0, 0, 0);
+    transition: top 1s ease 0s;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  nav .mainMenu li a:hover {
+    background: none;
+    color: rgb(255, 123, 0);
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
 }
 
-.nav-list li{
-    list-style: none;
-    padding: 26px 30px;
-    
 
-}
-
-.nav-list li a{
-    text-decoration: none;
-    color: aliceblue;
-
-}
-.nav-list li a:hover{
-    text-decoration: none;
-    color: yellow;
-}
 .background{
     background: rgb(0, 0,0,0.7) url("Bookstore Image Website.jpg");
     background-size: cover;
@@ -65,8 +117,9 @@ body{
 }
 #Search{
     padding: 5px;
+    right: 5%;
     font-size: 17px;
-    border: 2px solid grey;
+    border: 2px solid black;
     border-radius: 9px;
 
 
@@ -147,20 +200,85 @@ header h4{
     opacity: 0;
     transition: ease-in-out 0.5s;
 }
-.footer{
-    padding: 0;
-    
-    
-    top: 300%;
-    height: 1vh;
-    width: 50%; 
-    align-content: horizontal;
-    justify-content: center;
-    
-}
-.footer li{
-    list-style: none;
-}
-/* .main{
-    flex-direction: column;
-} */
+.footer {
+    background: #f9f9f9;
+    top: 100%;
+  }
+  
+  .footer .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .footer .box-container .box h3 {
+    font-size: 1.2rem;
+    color: #130f40;
+    padding: 1rem 0;
+  }
+  
+  .footer .box-container .box p {
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+    line-height: 2;
+  }
+  
+  .footer .box-container .box a {
+    display: block;
+    font-size: 1.4rem;
+    color: #666;
+    padding: 1rem 0;
+  }
+  
+  .footer .box-container .box a i {
+    padding-right: .5rem;
+    color: #eb4d4b;
+  }
+  
+  .footer .box-container .box a:hover {
+    color: #eb4d4b;
+  }
+  
+  .footer .box-container .box a:hover i {
+    padding-right: 2rem;
+  }
+  
+  .footer .share {
+    padding-top: 2rem;
+    text-align: center;
+  }
+  
+  .footer .share a {
+    font-size: 1rem;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    border-radius: 25%;
+    background: #130f40;
+    color: #fff;
+    margin: .3rem;
+  }
+  
+  .footer .share a:hover {
+    background: #eb4d4b;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  
+  .footer .credit {
+    margin-top: 2.5rem;
+    padding: 1rem;
+    padding-top: 2rem;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #666;
+    font-size: 1.5rem;
+  }
+  
+  .footer .credit span {
+    color: #eb4d4b;
+  }
+  
