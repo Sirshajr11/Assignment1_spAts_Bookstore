@@ -77,3 +77,20 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+var swiper = new swiper(".review-slide", {
+    loop:true,
+    spaceBetween:20,
+    autoplay: {
+      delay: 9500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+    },
+  });
+  

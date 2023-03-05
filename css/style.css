@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: aquamarine;
+    background-color: rgb(226, 247, 240);
 }
 .logo-img{
   float: left;
@@ -33,24 +33,11 @@ body {
   font-family: Arial, sans-serif;
 }
 nav {
-  background: rgb(3, 63, 32);
+  background: rgb(2, 36, 19);
   color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.logo-img{
-   width: 20%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-.logo-img img{
-  width: 30%;
-  left: -10%;
-  border: 3px solid rgb(220, 245, 78);
-  border-radius: 30px;
-  cursor: pointer;
 }
 nav .mainMenu {
   display: flex;
@@ -66,7 +53,7 @@ nav .mainMenu li a {
   transition: 0.2s ease;
 }
 nav .mainMenu li a:hover {
-  background: rgb(217, 255, 0);
+  background: rgb(207, 209, 201);
 }
 nav .openMenu {
   font-size: 2rem;
@@ -132,29 +119,27 @@ nav .logo {
 }
 
 
-.background{
-    background: rgb(0, 0,0,0.7) url("Bookstore Image Website.jpg");
-    background-size: cover;
-    background-blend-mode: darken;
-}
 
 
 
 header{
     position: relative;
-    left: 0;
+    left:0;
     top: 0;
     width: 100%;
     height: 80px;
 }
 header h4{
     position: relative;
-    left: 0%;
+    left: 35%;
     top: 10px;
     bottom: 1rem;
     font-size: 1.6rem;
+    color: white;
 }
+
 .Book-img{
+    background-color: #bbb;
     color: rgb(1, 1, 23);
     font-size: 1.5rem;
     text-align: center;
@@ -166,6 +151,7 @@ header h4{
   max-width: 1000px;
   position: relative;
   margin: auto;
+  
 }
 
 /* Hide the images by default */
@@ -282,10 +268,106 @@ header h4{
     opacity: 0;
     transition: ease-in-out 0.5s;
 }
+.review {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: #f9f9f9;
+}
+
+.review .slide {
+  border-radius: .5rem;
+  background: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  text-align: center;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.review .slide p {
+  font-size: 1.4rem;
+  color: #666;
+  line-height: 2;
+}
+
+.review .slide .user {
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.review .slide .user img {
+  height: 7rem;
+  width: 7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.review .slide .user h3 {
+  font-size: 2.2rem;
+  color: #130f40;
+}
+
+.review .slide .user span {
+  font-size: 1.5rem;
+  color: #eb4d4b;
+}
+
+.contact{
+  background-color: #d7f1c2;
+}
+.contact .icons-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.contact .icons-container .icons {
+  padding: 2rem;
+  border-radius: .5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact .icons-container .icons i {
+  font-size: 2.5rem;
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.contact .icons-container .icons h3 {
+  font-size: 2.2rem;
+  padding: 1rem 0;
+  color: #272727;
+}
+
+.contact .icons-container .icons p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #868585;
+}
+
 .footer {
     background: #d7f1c2;
     top: 200%;
     width: 100%;
+    
   }
   
   .footer .box-container {
@@ -297,13 +379,13 @@ header h4{
   }
   
   .footer .box-container .box h3 {
-    font-size: 1.0rem;
+    font-size: 1.5rem;
     color: #130f40;
     padding: 1rem 0;
   }
   
   .footer .box-container .box p {
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     color: #666;
     padding: 1rem 0;
     line-height: 2;
@@ -311,7 +393,7 @@ header h4{
   
   .footer .box-container .box a {
     display: block;
-    font-size: 1.4rem;
+    font-size: 1.0rem;
     color: #666;
     padding: 1rem 0;
   }
@@ -319,6 +401,7 @@ header h4{
   .footer .box-container .box a i {
     padding-right: .5rem;
     color: #eb4d4b;
+    text-decoration: none;
   }
   
   .footer .box-container .box a:hover {
