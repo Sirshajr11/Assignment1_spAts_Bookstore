@@ -333,6 +333,7 @@ header h4{
   -webkit-transform: scale(0);
           transform: scale(0);
   z-index: 1;
+  
 }
 
 .products .box-container .box .icons a {
@@ -343,11 +344,13 @@ header h4{
   text-align: center;
   background: #fff;
   border-radius: .5rem;
+  text-decoration: none;
 }
 
 .products .box-container .box:hover .icons {
   -webkit-transform: scale(1);
           transform: scale(1);
+          
 }
 
 .products .box-container .box .image {
