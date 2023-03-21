@@ -262,6 +262,11 @@ header h4{
 .products.heading h1{
   color: #bbb;
 }
+.products h1.heading{
+  position: relative;
+  text-align: center;
+  font-size: 2.2rem;
+}
 .products .filter-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -429,6 +434,7 @@ header h4{
   padding-left: 0.5rem;
   padding-bottom: 5rem;
   background: #bef8dd;
+  padding-right: 0.5rem;
 }
 
 .review .slide {
@@ -482,6 +488,7 @@ header h4{
 .contact{
   background-color:#c7f3c7;
   padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .contact .icons-container {
   display: -ms-grid;
@@ -526,6 +533,7 @@ header h4{
     top: 200%;
     width: 100%;
     padding: 3vb;
+    margin-right: 2px;
     
   }
   
@@ -611,5 +619,24 @@ header h4{
   .footer .credit span {
     color: #eb4d4b;
     cursor: pointer;
+  }
+  #myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    background-color: red; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px;
+    border-radius: 10px; 
+    font-size: 18px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
   }
   
