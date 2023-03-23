@@ -29,6 +29,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 99;
 }
 nav .mainMenu {
   display: flex;
@@ -44,7 +45,8 @@ nav .mainMenu li a {
   transition: 0.2s ease;
 }
 nav .mainMenu li a:hover {
-  background: #CBE4DE;
+  background: #f6ffd3;
+  color: #0d0d0e;
 }
 nav .openMenu {
   font-size: 2rem;
@@ -125,8 +127,8 @@ header h4{
     text-align: center;
     top: 10px;
     bottom: 1rem;
-    font-size: 1.6rem;
-    color: #7033fc;
+    font-size: 2.5rem;
+    color: #0d0d0e;
 }
 
 .Book-img{
@@ -486,9 +488,12 @@ header h4{
 }
 
 .contact{
-  background-color:#c7f3c7;
+  background-color:#ebf8eb;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+.contact h1 .heading{
+  font-size: 2.0rem;
 }
 .contact .icons-container {
   display: -ms-grid;
@@ -517,7 +522,7 @@ header h4{
 }
 
 .contact .icons-container .icons h3 {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   padding: 1rem 0;
   color: #272727;
 }
